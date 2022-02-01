@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="android.com.yourbookk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sph"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/sph"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.yourbookk"
+        tools:ignore="AllowBackup"
+        tools:replace="android:icon,android:theme">
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Adapter"
+            android:exported="true" />
+        <activity
+            android:name=".item"
+            android:exported="true"></activity>
+        <activity
+            android:name=".panieruser"
+            android:exported="true"></activity>
+        <activity
+            android:name=".passercommande"
+            android:exported="true"></activity>
+        <activity
+            android:name=".home"
+            android:exported="true" />
+        <activity
+            android:name=".promotion"
+            android:exported="true"></activity>
+        <activity
+            android:name=".informatique"
+            android:exported="true" />
+        <activity
+            android:name=".arab"
+            android:exported="true" />
+        <activity
+            android:name=".cuisine"
+            android:exported="true" />
+        <activity
+            android:name=".islamique"
+            android:exported="true" />
+        <activity
+            android:name=".math"
+            android:exported="true" />
+        <activity
+            android:name=".physique"
+            android:exported="true" />
+        <activity
+            android:name=".Chimie"
+            android:exported="true" />
+        <activity
+            android:name=".chatadmin"
+            android:exported="true" />
+        <activity
+            android:name=".ajoutertopanier"
+            android:exported="true" />
+        <activity
+            android:name=".Menu"
+            android:exported="true" />
+        <activity
+            android:name=".signup"
+            android:exported="true" />
+        <activity
+            android:name=".skiplivre"
+            android:exported="true" />
+        <activity
+            android:name=".login"
+            android:exported="true" />
+        <activity
+            android:name=".skipe"
+            android:exported="true" />
+        <activity
+            android:name=".infocommandclient"
+            android:exported="true" />
+        <activity
+            android:name=".welcomactivity"
+            android:exported="true" />
+        <activity
+            android:name=".cmdadmin"
+            android:exported="true" />
+        <activity
+            android:name=".modifierlivreaddm"
+            android:exported="true" />
+        <activity
+            android:name=".ajouterlivreadmain"
+            android:exported="true" />
+        <activity
+            android:name=".fairepromotionadmain"
+            android:exported="true" />
+        <activity
+            android:name=".homeadmin"
+            android:exported="true" />
+        <activity
+            android:name=".demarage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".account"
+            android:exported="true" />
+    </application>
+
+</manifest>

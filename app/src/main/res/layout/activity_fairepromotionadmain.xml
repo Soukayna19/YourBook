@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/it"
+    tools:context=".fairepromotionadmain">
+
+    <ImageView
+        android:id="@+id/select_IMG"
+        android:layout_width="230dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/ic_monochrome_photos_black_24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/select_IMG"
+        android:layout_marginTop="27dp"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/select_IMG"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="le nom promotion :"
+                    android:textColor="@color/list_product_name"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/nom_promotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="important" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text=" reduction :      "
+                    android:textColor="@color/list_product_name"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/reduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="important" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Prix initiale  :   "
+                    android:textColor="@color/list_product_name"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/prixinitialle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="en dh maroc " />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="neveau prix :   "
+                    android:textColor="@color/list_product_name"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/prixpromotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="en dh maroc " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="description de promotion:"
+                    android:textColor="@color/list_product_name"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/descriptionpromotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="important" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="la durie  de promotion en jour "
+                    android:textColor="@color/list_product_name"
+                    android:textSize="20dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/duridepromotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint=" important" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="151dp"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text=" image  :   "
+                    android:textColor="@color/list_product_name"
+                    android:textSize="20dp"
+
+                    />
+
+                <Button
+                    android:id="@+id/imagepromotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/input"
+                    android:text="selectioner une image " />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ajoute_promotion"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/input"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="faire une promotion" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageButton
+            android:id="@+id/panier"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="293dp"
+            android:background="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_shopping_cart_black_24dp"
+            tools:ignore="VectorDrawableCompat,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
+        app:tabMode="scrollable">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/homeTb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:text="home" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_card_giftcard_black_24dp"
+            android:text="promotion" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/islam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="islamique" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/cuisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cuisine" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/physi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="physique" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/chimi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chimie" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="mathématique" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/infor"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="informatique" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/arab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="arabe" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F3F3F3"
+    tools:context=".modifierlivreaddm">
+
+    <ImageView
+        android:id="@+id/imagelivre"
+        android:layout_width="230dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/islamique1"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/modifiernom"
+        android:layout_width="171dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/imagelivre"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/hint_label"
+        android:shadowDx="30"
+        android:shadowDy="30"
+        android:shadowRadius="12"
+        android:text="Le Génie L'ISLAM "
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scroo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifiernom"
+        android:layout_marginTop="27dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/soukk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/select_IMG"
+            android:background="#A0A59C"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/input"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="149dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="12dp"
+                    android:shadowColor="@color/hint_label"
+                    android:shadowDx="30"
+                    android:shadowDy="30"
+                    android:shadowRadius="12"
+                    android:text="modifier categorie de livre"
+                    android:textAlignment="center"
+                    android:textColor="@color/list_product_name"
+
+                    android:textSize="20dp" />
+
+                <EditText
+
+                    android:id="@+id/modifiercategorie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/input"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="12dp"
+                    android:shadowColor="@color/hint_label"
+                    android:shadowDx="30"
+                    android:shadowDy="30"
+                    android:shadowRadius="12"
+                    android:text="modifier prix de livre  "
+                    android:textAlignment="center"
+                    android:textColor="@color/list_product_name"
+
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/modifierprix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/input"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="12dp"
+                    android:shadowColor="@color/hint_label"
+                    android:shadowDx="30"
+                    android:shadowDy="30"
+                    android:shadowRadius="12"
+                    android:text="dmodifier discription de livre "
+                    android:textAlignment="center"
+                    android:textColor="@color/list_product_name"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/modifierdiscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/validation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input"
+                android:onClick="Validationfonction"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:shadowColor="@color/hint_label"
+                android:shadowDx="30"
+                android:shadowDy="30"
+                android:shadowRadius="12"
+                android:text="faire modification"
+                android:textColor="@color/list_product_name"
+                tools:ignore="NotSibling,OnClick,UsingOnClickInXml" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
